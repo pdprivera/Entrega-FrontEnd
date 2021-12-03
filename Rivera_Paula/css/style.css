@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root {
+    --rojoPrimario: rgb(242, 95, 58);
+    --azulPrimario: rgb(35, 44, 81);
+    --azulGrisNeutro: rgb(143, 148, 167);
+    --azulOscuroNeutro: rgb(29, 30, 37);
+    --rojoNeutro: rgb(255, 239, 234);
+    --grisNeutro: rgb(249, 249, 249);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-image: url("../img/bg.svg"); 
+}
+
+/* Estilo para Tipografía */
+
+h1, h3, h4 {
+    color: var(--azulPrimario);
+    font-weight: 700;
+    margin: 1.5vh 0;
+}
+
+h2, h6 {
+    color: var(--grisNeutro);
+    line-height: 3.5rem;
+    margin: 1.5vh 0;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h3 {font-size: 2rem;}
+
+h4 {font-size: 1rem;}
+
+h6 {
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+p {
+    color: var(--azulGrisNeutro);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.5vh 0;
+}
+
+.textColor {color: var(--azulOscuroNeutro);}
+
+
+/* Estilo para contenedores header, section y div */
+
+.contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 10%;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10%; 
+}
+
+.contenedor2-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10%; 
+}
+
+.contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5% 10%; 
+}
+
+.contenedor4 {
+    background-color: var(--rojoPrimario);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 10%;
+    width: 100%;
+}
+
+.contenedor5 {
+    background-color: var(--azulOscuroNeutro);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5% 8% 3%;
+}
+
+.contenedor6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contenedorMedio {width: 45%;}
+
+.caja1 {
+    margin: 2.5% 0;
+    text-align: center;
+    width: 100%;
+}
+
+.caja2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+    width: 30%; 
+}
+
+.caja3 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.caja4 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.caja5 {display: flex;}    
+
+.caja6 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Estilo para botones y formulario */
+
+button {
+    background-color: var(--rojoPrimario);
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    color: var(--grisNeutro);
+    font-size: 13px;
+    margin: 1.5vh 0;
+    padding: 10px 20px;
+}
+
+#button2 {
+    background-color:var(--grisNeutro);
+    color: var(--rojoPrimario);
+}
+
+button:hover {opacity: 0.5;}
+
+input {
+    border: none;
+    border-radius: 60px;
+    color: var(--grisNeutro);
+    font-size: 13px;
+    height: 5vh;
+    margin: 1.5vh 1vw;
+    padding: 10px 20px;
+}
+
+input:active {
+    background-color: var(--rojoNeutro);
+}
+
+/* Listas Header */
+
+.menu1 ul {
+    color: var(--azulPrimario);
+    display: flex;  
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+li {padding: 0 1vw;}
+
+.menuHam {
+    visibility: hidden;
+}
+
+/* Listas Main */
+
+ol li{
+    color: var(--azulPrimario);
+    font-weight: 700;
+    font-size: 1rem; 
+    list-style-image: url("../img/but01.png"); 
+}
+
+ol li:nth-child(2) {list-style-image: url("../img/but02.png");}
+
+ol li:nth-child(3) {list-style-image: url("../img/but03.png");}
+
+/* Listas Footer */
+
+.menu2 ul {
+    color: var(--grisNeutro);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 5vh;
+    list-style: none;
+}
+
+/* Main */
+
+.imgSize {width: 100%;}
+
+.imgSize2 {
+    margin: 1.5vh 0;
+    width: 25%;
+}
+
+/* Footer */
+
+.fab {
+    align-self: center;
+    color: white;
+    padding: 5%;
+}
+
+#iconos {
+    display: flex;
+    align-content: space-between;
+    margin-top: 30%;
+}
+
+/* Media queries */
+
+@media (max-width: 1000px){
+
+    body {background-image: url("../img/bg01.svg");}
+
+    /* Header */
+
+    .menuHam {visibility: visible;}
+
+    header nav {display: none;}
+
+    header button {display: none;}
+
+    /* Main  y Footer */
+
+    .contenedorMedio,.caja2:nth-of-type(3) {
+        text-align: center;
+        width: 100%;
+    }
+
+    .caja2:first-of-type {display: none;}
+
+    .caja2:nth-of-type(2) {display: none;}
+
+    .contenedor2, .contenedor6, .caja3{flex-direction: column-reverse;}
+
+    .contenedor4, .caja6 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .caja4 {
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    .caja5 {align-self: center;}
+
+    #iconos {margin-bottom: 30%;}
+
+    ol li {
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+    
+}  
